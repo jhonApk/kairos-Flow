@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_dashboard"
+        android:title="@string/menu_bottom_bar_dashboard"
+        android:icon="@drawable/ic_menu_dashboard"/>
+
+    <item android:id="@+id/menu_agenda"
+        android:title="@string/menu_bottom_bar_agenda"
+        android:icon="@drawable/ic_calendar_2_line"/>
+
+    <item android:id="@+id/menu_habitos"
+        android:title="@string/menu_bottom_bar_habitos"
+        android:icon="@drawable/ic_check_line"/>
+
+    <item android:id="@+id/menu_pomodoro"
+        android:title="@string/menu_bottom_bar_pomodoro"
+        android:icon="@drawable/ic_timer_line"/>
+
+</menu>
