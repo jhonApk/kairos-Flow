@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.devjhon.kairosflowapp.Ui.Auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_to_registro"
+            app:destination="@id/registroFragment"/>
+
+        <action
+            android:id="@+id/action_login_to_recuperar"
+            app:destination="@id/recuperarSenhaFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.devjhon.kairosflowapp.Ui.Auth.RegistroFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_registro" />
+
+
+    <fragment
+        android:id="@+id/recuperarSenhaFragment"
+        android:name="com.devjhon.kairosflowapp.Ui.Auth.RecuperarSenhaFragment"
+        android:label="Recuperar Senha"
+        tools:layout="@layout/fragment_recuperar_senha" />
+
+    <fragment
+        android:id="@+id/novaSenhaFragment"
+        android:name="com.devjhon.kairosflowapp.Ui.Auth.NovaSenhaFragment"
+        android:label="Nova Senha"
+        tools:layout="@layout/fragment_nova_senha" />
+
+
+    <fragment
+        android:id="@+id/confirmEmailFragment"
+        android:name="com.devjhon.kairosflowapp.Ui.Auth.ConfirmEmailFragment"
+        android:label="Comfirmar Email"
+        tools:layout="@layout/fragment_confirm_email" />
+
+
+</navigation>

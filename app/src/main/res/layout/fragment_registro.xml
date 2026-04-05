@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.Auth.RegistroFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+            android:layout_height="78dp"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/tv_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="voltar"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:text="Kairos"
+                android:textColor="@color/txt_color"
+                android:textSize="48sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:text="Bem -Vindo de volta"
+            android:layout_gravity="center"
+            android:textColor="@color/txt_color"
+            android:textSize="38sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_emailRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#4A4A4B"
+            android:paddingLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="normal"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edt_emailRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textColorHint="#4DFFFFFF"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edt_text"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_passwordRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha"
+            android:textColor="#4A4A4B"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="normal"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/bg_edt_text"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#46FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_confirmSenhaRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comfirmar Senha"
+            android:textColor="#4A4A4B"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="normal"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edt_confirmPasswordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/bg_edt_text"
+            android:inputType="textPassword"
+            android:hint="Comfirm Password"
+            android:textColorHint="#46FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"/>
+
+
+        <TextView
+            android:id="@+id/forcaSenhaRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha forte"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:textColorHint="#83FFFFFF"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/primary_color_app"
+            android:textStyle="normal"
+            android:textSize="16sp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_criarConta"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:focusable="true"
+            android:text="Criar conta"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_btn_primary"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="58dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---------------------------- ou ----------------------------"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/primary_color_app"
+            android:textStyle="normal"
+            android:textSize="16sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_entrarRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4A4A4B"
+            android:text="Já tem conta? Entrar"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
