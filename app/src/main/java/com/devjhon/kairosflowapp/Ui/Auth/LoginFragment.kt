@@ -29,7 +29,7 @@ class LoginFragment : Fragment() {
         }
 
         binding.tvEsqueceuSenha.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_recuperar)
+            findNavController().navigate(R.id.confirmEmailFragment)
         }
     }
 

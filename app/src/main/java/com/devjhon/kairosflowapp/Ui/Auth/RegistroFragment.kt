@@ -15,7 +15,7 @@ class RegistroFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentRegistroBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -23,8 +23,12 @@ class RegistroFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.tvVoltar.setOnClickListener {
+        binding.btnVoltarRegistro.setOnClickListener {
             findNavController().popBackStack()
+        }
+
+        binding.tvEntrarRegistro.setOnClickListener {
+            findNavController().popBackStack(R.id.loginFragment, false)
         }
     }
 

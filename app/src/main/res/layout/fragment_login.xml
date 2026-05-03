@@ -8,14 +8,15 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarRegister"
+        android:paddingTop="36dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="120dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:paddingTop="16dp"
-            android:layout_height="78dp"
+            android:paddingTop="22dp"
+            android:layout_height="match_parent"
             android:background="@color/background">
 
 

@@ -14,16 +14,19 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:paddingTop="16dp"
-            android:layout_height="78dp"
+            android:paddingTop="42dp"
+            android:layout_height="match_parent"
             android:background="@color/background">
 
-            <TextView
-                android:id="@+id/tv_voltar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="voltar"
-                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/btn_voltarRegistro"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="voltar"
+                android:scaleType="centerCrop"
+                android:padding="6dp"
+                android:background="@drawable/bg_btn_primary"
+                android:src="@drawable/ic_arrow_compact_left" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,7 +57,7 @@
             android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:text="Bem -Vindo de volta"
+            android:text="Bem -Vindo"
             android:layout_gravity="center"
             android:textColor="@color/txt_color"
             android:textSize="38sp" />
