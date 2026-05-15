@@ -11,6 +11,7 @@
 
     <item android:id="@+id/menu_habitos"
         android:title="@string/menu_bottom_bar_habitos"
+        
         android:icon="@drawable/ic_check_line"/>
 
     <item android:id="@+id/menu_pomodoro"

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.devjhon.kairosflowapp.Data.Compromisso
 import com.devjhon.kairosflowapp.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -19,5 +20,7 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+
 
 }

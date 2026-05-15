@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -22,8 +23,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btnv"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:background="@drawable/bg_bottom_bar"
+        android:layout_height="75dp"
+        app:itemIconSize="24dp"
+        android:fitsSystemWindows="false"
+        android:background="@drawable/background_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

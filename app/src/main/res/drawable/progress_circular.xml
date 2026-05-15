@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Anel de fundo (cinza) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#2a2a38"/>
+        </shape>
+    </item>
+
+    <!-- Anel de progresso (verde) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="ring"
+                android:thicknessRatio="10"
+                android:useLevel="true">
+                <solid android:color="#c8f565"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>
